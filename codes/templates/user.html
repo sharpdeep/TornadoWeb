@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h2>Your information are:</h2>
+{% end %}
+
+{% block body %}
+    <ul>
+        {% for user in users %}
+            <li>username:{{user[1]}}</li>
+            <li>password:{{user[2]}}</li>
+            <li>email:{{user[3]}}</li>
+        {% end %}
+    </ul>
+{% end %}
